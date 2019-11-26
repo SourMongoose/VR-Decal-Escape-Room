@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ChessPiece
+  - BananaKey
+  - TriggerKey
   layers:
   - Default
   - TransparentFX
