@@ -8,6 +8,10 @@ public class ChessPiece : MonoBehaviour {
         Z_THRESHOLD = 0.4f,
         Y_THRESHOLD = 1f;
 
+    public static bool complete = false;
+
+    public string pieceName;
+
     private Vector3 origPosition;
 
     private GameObject follow = null;
@@ -23,6 +27,13 @@ public class ChessPiece : MonoBehaviour {
         if (follow != null) {
             transform.position = follow.transform.position + followDiff;
         }
+
+        //knock over king once puzzle is complete
+        if (pieceName.Equals("black king") && complete && transform.rotation.z < 93) {
+            gameObject.transform.Rotate(Vector3.forward, Time.deltaTime * 93);
+            Vector3 curr = transform.localPosition;
+            transform.localPosition = new Vector3(curr.x + Time.deltaTime * 0.7f, curr.y + Time.deltaTime * 0.44f, curr.z);
+        }
     }
 
     public void moveBack() {
@@ -30,8 +41,10 @@ public class ChessPiece : MonoBehaviour {
     }
 
     public void pickUp(GameObject hand) {
-        follow = hand;
-        followDiff = transform.position - hand.transform.position;
+        if (!complete) {
+            follow = hand;
+            followDiff = transform.position - hand.transform.position;
+        }
     }
 
     public void drop() {
@@ -47,8 +60,12 @@ public class ChessPiece : MonoBehaviour {
             if (Mathf.Abs(transform.localPosition.x - x) < X_THRESHOLD
                 && Mathf.Abs(transform.localPosition.z - z) < Z_THRESHOLD
                 && Mathf.Abs(transform.localPosition.y - y) < Y_THRESHOLD) {
-                transform.localPosition = new Vector3(x, y, z);
-                return;
+                //make sure correct piece is moved to correct square
+                if (pieceName.Equals("white knight") && x == 1 && z == 2) {
+                    transform.localPosition = new Vector3(x, y, z);
+                    complete = true;
+                    return;
+                }
             }
         }
 
