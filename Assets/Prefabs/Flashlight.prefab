@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 184925470611993950}
   - component: {fileID: 184925470611993948}
   - component: {fileID: 184925470611993951}
+  - component: {fileID: 114104066646577594}
   m_Layer: 0
   m_Name: Flashlight
-  m_TagString: Untagged
+  m_TagString: FlashLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +79,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &114104066646577594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184925470611993921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f29846e913914ca0aa29e3c8a428a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundOn: {fileID: 8300000, guid: 727bc2a6c99106a44a2f79d1abe3f2fb, type: 3}
+  soundOff: {fileID: 8300000, guid: 5329be36de447994e8e0f4f9ddf692bc, type: 3}
+  light: {fileID: 0}
+  audio: {fileID: 0}
 --- !u!1 &184925470712849257
 GameObject:
   m_ObjectHideFlags: 0
