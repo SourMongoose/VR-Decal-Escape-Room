@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flashlight : MonoBehaviour
+public class FlashLight : MonoBehaviour
 {
     public AudioClip soundOn;
     public AudioClip soundOff; 
@@ -25,4 +25,6 @@ public class Flashlight : MonoBehaviour
             audio.Play();
         }
     }
+
+    
 }
