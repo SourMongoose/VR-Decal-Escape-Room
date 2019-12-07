@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &34840813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -245,19 +246,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000021855694
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalRotation.w
@@ -273,7 +274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -311,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: black king
 --- !u!54 &106154628
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -488,6 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &202464473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -706,6 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &583988622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -877,6 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &697910168
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -985,6 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1001954091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1131,6 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1145867193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1441,6 +1448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1419906940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1549,6 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1468669460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1657,6 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1478142424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1771,6 +1781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1559253536
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1879,6 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1562584413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1987,6 +1999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1594759013
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2157,6 +2170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1835075627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2265,6 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &1891819173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2465,6 +2480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: white knight
 --- !u!54 &2019537424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2592,6 +2608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479769fc0cecd4c40b9d77f043e130ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceName: 
 --- !u!54 &2102843338
 Rigidbody:
   m_ObjectHideFlags: 0
